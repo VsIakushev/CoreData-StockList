@@ -14,6 +14,7 @@
 		57A4257B298393F400760028 /* StockInfoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57A42579298393F400760028 /* StockInfoDataModel.xcdatamodeld */; };
 		57A4257D298394ED00760028 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4257C298394ED00760028 /* DataController.swift */; };
 		57A42581298399AC00760028 /* AddStockInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A42580298399AC00760028 /* AddStockInfoView.swift */; };
+		57A425852983D63B00760028 /* BasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A425842983D63B00760028 /* BasicInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		57A4257A298393F400760028 /* StockModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockModel.xcdatamodel; sourceTree = "<group>"; };
 		57A4257C298394ED00760028 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		57A42580298399AC00760028 /* AddStockInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockInfoView.swift; sourceTree = "<group>"; };
+		57A425842983D63B00760028 /* BasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				57A4256C2982F74A00760028 /* ContentView.swift */,
 				57A42580298399AC00760028 /* AddStockInfoView.swift */,
+				57A425842983D63B00760028 /* BasicInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				57A4256D2982F74A00760028 /* ContentView.swift in Sources */,
 				57A42581298399AC00760028 /* AddStockInfoView.swift in Sources */,
 				57A4256B2982F74A00760028 /* CoreData_StockListApp.swift in Sources */,
+				57A425852983D63B00760028 /* BasicInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

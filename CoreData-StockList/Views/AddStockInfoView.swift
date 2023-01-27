@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//Этот вью потом можно будет удалить, StockInfoEntity будут создаваться автоматически при составлении портфеля
+//Это тестовое-вью потом можно будет удалить, StockInfoEntity будут создаваться автоматически при составлении портфеля
 
 struct AddStockInfoView: View {
     @Environment(\.managedObjectContext) var managedObjContext
@@ -42,10 +42,13 @@ struct AddStockInfoView: View {
                     TextField("Share in Portfolio", value: $quantity, formatter: NumberFormatter())
                         .keyboardType(.decimalPad)
                 }
+                
+                Button("Submit"){
+                    DataController().addStockInfoEntity(ticker: ticker, share: share, amount: amount, price: price, quantity: quantity, context: managedObjContext)
+                    dismiss()
+                }
             }
         }
-        
-        
     }
 }
 

@@ -13,8 +13,8 @@ struct CoreData_StockListApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AddStockInfoView()
-//            ContentView()
+//            AddStockInfoView()
+            ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
