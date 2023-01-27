@@ -11,6 +11,9 @@
 		57A4256D2982F74A00760028 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4256C2982F74A00760028 /* ContentView.swift */; };
 		57A4256F2982F74A00760028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A4256E2982F74A00760028 /* Assets.xcassets */; };
 		57A425722982F74A00760028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A425712982F74A00760028 /* Preview Assets.xcassets */; };
+		57A4257B298393F400760028 /* StockInfoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57A42579298393F400760028 /* StockInfoDataModel.xcdatamodeld */; };
+		57A4257D298394ED00760028 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4257C298394ED00760028 /* DataController.swift */; };
+		57A42581298399AC00760028 /* AddStockInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A42580298399AC00760028 /* AddStockInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		57A4256C2982F74A00760028 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57A4256E2982F74A00760028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57A425712982F74A00760028 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57A4257A298393F400760028 /* StockModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockModel.xcdatamodel; sourceTree = "<group>"; };
+		57A4257C298394ED00760028 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		57A42580298399AC00760028 /* AddStockInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				57A4256A2982F74A00760028 /* CoreData_StockListApp.swift */,
-				57A4256C2982F74A00760028 /* ContentView.swift */,
+				57A4257F2983997200760028 /* Helpers */,
+				57A4257E2983996400760028 /* Views */,
+				57A42578298393A400760028 /* DataModel */,
 				57A4256E2982F74A00760028 /* Assets.xcassets */,
 				57A425702982F74A00760028 /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				57A425712982F74A00760028 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57A42578298393A400760028 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				57A42579298393F400760028 /* StockInfoDataModel.xcdatamodeld */,
+				57A4257C298394ED00760028 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		57A4257E2983996400760028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57A4256C2982F74A00760028 /* ContentView.swift */,
+				57A42580298399AC00760028 /* AddStockInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57A4257F2983997200760028 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A4257B298393F400760028 /* StockInfoDataModel.xcdatamodeld in Sources */,
+				57A4257D298394ED00760028 /* DataController.swift in Sources */,
 				57A4256D2982F74A00760028 /* ContentView.swift in Sources */,
+				57A42581298399AC00760028 /* AddStockInfoView.swift in Sources */,
 				57A4256B2982F74A00760028 /* CoreData_StockListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +373,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57A42579298393F400760028 /* StockInfoDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57A4257A298393F400760028 /* StockModel.xcdatamodel */,
+			);
+			currentVersion = 57A4257A298393F400760028 /* StockModel.xcdatamodel */;
+			path = StockInfoDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 57A4255F2982F74A00760028 /* Project object */;
 }

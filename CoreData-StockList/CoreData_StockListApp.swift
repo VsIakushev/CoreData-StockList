@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct CoreData_StockListApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AddStockInfoView()
+//            ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
